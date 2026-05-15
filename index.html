@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buildbest Apparel - Premium Streetwear Manufacturer Sialkot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #d4af37;
+      --dark: #0a0a0a;
+      --gray: #1a1a1a;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--dark);
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0; width: 100%;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    .logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1622495546323-5d3d6d6c3f3f?w=2000') center/cover;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      animation: fadeUp 1.2s ease;
+    }
+    .hero h1 {
+      font-size: clamp(3.2rem, 8vw, 5.8rem);
+      line-height: 1.05;
+      margin-bottom: 1rem;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p { font-size: 1.4rem; margin: 1.5rem 0; }
+
+    .btn {
+      padding: 16px 36px;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.4s;
+      margin: 10px;
+      display: inline-block;
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: black;
+      border: none;
+    }
+    .btn-gold:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(212, 175, 55, 0.5);
+    }
+
+    /* WhatsApp Float */
+    .wa-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.4rem;
+      box-shadow: 0 10px 30px rgba(37,211,102,0.5);
+      z-index: 9999;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes fadeUp { from { opacity:0; transform:translateY(60px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.12);} }
+
+    /* Sections */
+    .section {
+      padding: 110px 5% 80px;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 4rem;
+      color: white;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: var(--gray);
+      padding: 35px 25px;
+      border-radius: 16px;
+      text-align: center;
+      transition: 0.4s;
+      border: 1px solid #333;
+    }
+    .card:hover {
+      transform: translateY(-20px);
+      border-color: var(--gold);
+      box-shadow: 0 25px 50px rgba(212, 175, 55, 0.25);
+    }
+
+    footer {
+      background: #050505;
+      padding: 80px 5% 40px;
+      text-align: center;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">BUILDBEST<span>APPAREL</span></div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#whyus">Why Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#quote" class="btn btn-gold">GET A QUOTE →</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>BRING YOUR <span>VISION</span><br>TO LIFE</h1>
+      <p>Premium Streetwear & Custom Apparel Manufacturer from Sialkot, Pakistan</p>
+      <div>
+        <a href="#quote" class="btn btn-gold">GET FREE MOCKUP</a>
+        <a href="https://wa.me/923248903534" class="btn" style="background:transparent; border:2px solid var(--gold); color:var(--gold);">WHATSAPP US</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/923248903534" class="wa-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Services -->
+  <section class="section" id="services" style="background:#111;">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="card">
+        <h3>3D Puff Printing</h3>
+        <p>Bold raised premium 3D designs</p>
+      </div>
+      <div class="card">
+        <h3>Embroidery</h3>
+        <p>High quality detailed embroidery</p>
+      </div>
+      <div class="card">
+        <h3>Sublimation Printing</h3>
+        <p>Vibrant all-over prints</p>
+      </div>
+      <div class="card">
+        <h3>DTG Printing</h3>
+        <p>Full color digital printing</p>
+      </div>
+      <div class="card">
+        <h3>Heat Press & Vinyl</h3>
+        <p>Premium heat transfers</p>
+      </div>
+      <div class="card">
+        <h3>Custom Streetwear</h3>
+        <p>Hoodies, Tees, Jackets & more</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process" style="background:#0a0a0a;">
+    <h2>How It Works</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:30px; max-width:1100px; margin:auto;">
+      <div class="card">
+        <h1 style="color:var(--gold); font-size:3rem;">01</h1>
+        <h3>Submit Inquiry</h3>
+        <p>Share your design, quantity & idea</p>
+      </div>
+      <div class="card">
+        <h1 style="color:var(--gold); font-size:3rem;">02</h1>
+        <h3>Free Mockup</h3>
+        <p>Receive free mockup within 24 hours</p>
+      </div>
+      <div class="card">
+        <h1 style="color:var(--gold); font-size:3rem;">03</h1>
+        <h3>Production & Ship</h3>
+        <p>Quality production + fast delivery</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="section" id="quote" style="background:#111;">
+    <h2>Ready to Start Your Project?</h2>
+    <div style="max-width:700px; margin:0 auto; text-align:center;">
+      <a href="https://wa.me/923248903534" class="btn btn-gold" style="font-size:1.3rem; padding:20px 50px;">
+        <i class="fab fa-whatsapp"></i> WhatsApp Us Now
+      </a>
+      <p style="margin-top:25px; font-size:1.1rem;">
+        Email: buildbestaparel@gmail.com<br>
+        Phone: +92 324 8903534
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p style="font-size:1.4rem; margin-bottom:10px; color:var(--gold);">BUILDBEST APPAREL</p>
+    <p>Sialkot, Punjab, Pakistan</p>
+    <p>+92 324 8903534 | buildbestaparel@gmail.com</p>
+    <p style="margin-top:30px; opacity:0.7;">© 2026 Buildbest Apparel. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
